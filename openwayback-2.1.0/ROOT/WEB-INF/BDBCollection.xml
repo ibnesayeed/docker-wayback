@@ -40,14 +40,9 @@
     <property name="sourceList">
       <list>
         <bean class="org.archive.wayback.resourcestore.resourcefile.DirectoryResourceFileSource">
-          <property name="name" value="files1" />
-          <property name="prefix" value="${wayback.archivedir.1}" />
-          <property name="recurse" value="false" />
-        </bean>
-        <bean class="org.archive.wayback.resourcestore.resourcefile.DirectoryResourceFileSource">
-          <property name="name" value="files2" />
-          <property name="prefix" value="${wayback.archivedir.2}" />
-          <property name="recurse" value="false" />
+          <property name="name" value="warcs" />
+          <property name="prefix" value="${wayback.archivedir}" />
+          <property name="recurse" value="true" />
         </bean>
       </list>
     </property>

@@ -5,7 +5,7 @@ A [Docker container](https://www.docker.com/) image for [Open Wayback](https://g
 Following command will run a container with default Wayback configuration:
 
 ```bash
-$ docker run --rm -it -v /tmp/warc-files:/tmp/openwayback/files1 -p 8080:8080 ibnesayeed/wayback
+$ docker run --rm -it -v /tmp/warc-files:/wayback/warcs -p 8080:8080 ibnesayeed/wayback
 ```
 
 The above command assumes that data files `*.[w]arc[.gz]` are kept in `/tmp/warc-files` directory of the host machine.
