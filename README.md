@@ -8,7 +8,7 @@ Following command will run a container with default Wayback configuration:
 $ docker run --rm -it -v /tmp/warc-files:/wayback/warcs -p 8080:8080 ibnesayeed/wayback
 ```
 
-The above command assumes that data files `*.[w]arc[.gz]` are kept in `/tmp/warc-files` directory of the host machine.
+The above command assumes that data files `*.[w]arc[.gz]` are kept in `/tmp/warc-files` directory of the host machine that will be mapped to the `/wayback/warcs` volume of the container.
 
 If everything goes well, you should be able to access your collection. It may take a while before all the data files are indexed. It may take a little longer for the first time to download the Docker image from the repository, but the subsequent runs will be quick.
 
