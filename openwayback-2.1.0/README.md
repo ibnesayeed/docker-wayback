@@ -25,6 +25,7 @@ Following environment variables have been made available to override some basic 
 * WAYBACK_URL_SCHEME
 * WAYBACK_URL_HOST
 * WAYBACK_URL_PORT
+* WAYBACK_URL_PREFIX
 
 Following is an example that will set the host of Wayback to `example.com`. Pass multiple environment variables by adding multiple `-e` command line options.
 
